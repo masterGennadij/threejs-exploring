@@ -10,6 +10,7 @@ const createRenderer = (container) => {
   // correct on our screens
   renderer.gammaFactor = 2.2;
   renderer.outputEncoding = sRGBEncoding;
+
   renderer.physicallyCorrectLights = true;
 
   renderer.setSize(container.clientWidth, container.clientHeight);

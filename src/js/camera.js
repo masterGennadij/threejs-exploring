@@ -1,4 +1,4 @@
-import { PerspectiveCamera } from "three";
+import { PerspectiveCamera, Math as ThreeMath, Vector3 } from "three";
 
 const createCamera = (container) => {
   // Create a Camera
@@ -10,8 +10,7 @@ const createCamera = (container) => {
   const camera = new PerspectiveCamera(fieldOfView, aspect, near, far);
 
   // every object is initially created at ( 0, 0, 0 )
-  // we'll move the camera back a bit so that we can view the scene
-  camera.position.set(-5, 5, 7);
+  camera.position.set(Math.sin(1000) * 20, Math.sin(1000) * 15, 10);
 
   return camera;
 };

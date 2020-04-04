@@ -1,10 +1,13 @@
+import { Clock } from "three";
 import throttle from "lodash.throttle";
 import init from "./js/init";
 
 // Styles
 import "./styles/base.css";
 
-const { renderer, mesh, scene, camera, container } = init();
+const { renderer, scene, camera, container, animationMixers } = init();
+
+const clock = new Clock();
 
 // a function that will be called every time the window gets resized.
 // It can get called a lot, so don't put any heavy computation in here!
@@ -19,7 +22,13 @@ const onWindowResize = throttle(() => {
   renderer.setSize(container.clientWidth, container.clientHeight);
 }, 300);
 
-const update = () => {};
+const update = () => {
+  const delta = clock.getDelta();
+
+  for (const mixer of animationMixers) {
+    mixer.update(delta);
+  }
+};
 
 const render = () => {
   renderer.render(scene, camera);

@@ -10,11 +10,11 @@ import createMaterials from "./materials";
 import createGeometries from "./geometries";
 
 // Textures
-import textureSrc from "../textures/brick.png";
+import textureSrc from "../textures/grass.jpg";
 
 const createMeshes = (scene) => {
   // create a geometry
-  const geometry = new BoxBufferGeometry(10, 0.1, 10);
+  const geometry = new BoxBufferGeometry(20, 0.1, 20);
 
   // create a texture loader.
   const textureLoader = new TextureLoader();
@@ -33,6 +33,7 @@ const createMeshes = (scene) => {
   // create a default (white) Basic material
   const material = new MeshStandardMaterial({
     map: texture,
+    color: 0x6fb76f,
   });
 
   // create a Mesh containing the geometry and material
