@@ -1,0 +1,1 @@
+{"version":3,"sources":["base.css"],"names":[],"mappings":"AAAA,2BAGE,QAAS,CACT,SAAU,CACV,UAAW,CACX,WACF,CAEA,OACE,UAAW,CACX,WACF","file":"src.2fa40bf2.css","sourceRoot":"..","sourcesContent":["body,\nhtml,\n#scene-container {\n  margin: 0;\n  padding: 0;\n  width: 100%;\n  height: 100%;\n}\n\ncanvas {\n  width: 100%;\n  height: 100%;\n}\n"]}
