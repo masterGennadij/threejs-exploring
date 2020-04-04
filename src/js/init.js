@@ -1,7 +1,7 @@
 import { Scene, Color } from "three";
 import createCamera from "./camera";
 import createLight from "./light";
-import createMeshes from "./mesh";
+import createMeshes from "./meshes";
 import createRenderer from "./renderer";
 import createControls from "./controls";
 

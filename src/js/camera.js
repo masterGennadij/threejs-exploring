@@ -11,7 +11,7 @@ const createCamera = (container) => {
 
   // every object is initially created at ( 0, 0, 0 )
   // we'll move the camera back a bit so that we can view the scene
-  camera.position.set(-4, 4, 10);
+  camera.position.set(-5, 5, 7);
 
   return camera;
 };
