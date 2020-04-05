@@ -40,11 +40,11 @@ const createMeshes = (scene) => {
   const brick = new Mesh(geometry, material);
   brick.position.y = -0.95;
 
-  scene.add(brick);
+  //scene.add(brick);
 
   // create a Group to hold the pieces of the train
   const trainGroup = new Group();
-  scene.add(trainGroup);
+  //scene.add(trainGroup);
 
   const materials = createMaterials();
   const geometries = createGeometries();
@@ -82,6 +82,10 @@ const createMeshes = (scene) => {
     smallWheelFront,
     bigWheel
   );
+
+  const cube = new Mesh(geometries.cube, materials.cubeMaterials);
+  cube.position.set(3, 1, 3);
+  scene.add(cube);
 };
 
 export default createMeshes;

@@ -11,7 +11,9 @@ const createGeometries = () => {
   const wheel = new CylinderBufferGeometry(0.4, 0.4, 1.75, 16);
   wheel.rotateX(Math.PI / 2);
 
-  return { nose, cabin, chimney, wheel };
+  const cube = new BoxBufferGeometry(200, 200, 200);
+
+  return { nose, cabin, chimney, wheel, cube };
 };
 
 export default createGeometries;
