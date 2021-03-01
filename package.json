@@ -14,7 +14,7 @@
   "dependencies": {
     "lodash.throttle": "^4.1.1",
     "src": "^1.1.2",
-    "three": "^0.115.0"
+    "three": "^0.125.0"
   },
   "devDependencies": {
     "parcel": "^1.12.4",
